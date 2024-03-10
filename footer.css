@@ -1,0 +1,85 @@
+.footer-holder{
+    height: 80px;
+    border-top: 1px solid black;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+
+}
+
+.footer-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    object-position: center;
+    object-fit: cover;
+    flex: 40% 1 40%;
+}
+
+
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+}
+
+.left-texts{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blank-line{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40px;
+    border-right: 2px solid black;
+}
+
+.right{
+    display: flex;
+    
+}
+
+.right-logos{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.insta,
+.facebook,
+.x
+{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.github{
+    margin-right: 20px;
+    width: 32px;
+}
+
+.footer-img img{
+    margin-left: 20px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.right-logos img:hover{
+    cursor: pointer;
+}
+
+@media (max-width:619px){
+    .footer-holder{
+        display: flex;
+        flex-direction: column;
+    }
+}

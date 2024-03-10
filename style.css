@@ -1,0 +1,144 @@
+body{
+font-family: Lato, sans-serif;
+height: 100%;
+margin: 0;
+}
+
+.top-image-container{
+    height: 600px;
+}
+
+.background-img1{
+    background-image: url(images/image1.png);
+    min-height: 100%;
+}
+
+    .background-img2{
+        background-image: url(images/image2.png);
+        min-height: 100%;
+        background-position: center;
+        background-size: cover; 
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    .background-img3{
+        background-image: url(images/image3.png);
+        min-height: 100%;
+    }
+
+    .background-img4{
+        background-image: url(images/image4.png);
+        min-height: 100%;
+    }
+
+    .background-img1,
+    .background-img1,
+    .background-img3,
+    .background-img4{           
+        background-position: right;
+        background-size: cover;   
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+       position: relative;
+       background-attachment: fixed;
+}
+
+.intro{
+    background-color: #31353482;
+    color: white;
+    margin-top: 450px;
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 4px;
+    line-height: 20px;
+}
+
+.intro,
+.intro-2:hover{
+    cursor: pointer;
+}
+
+.description-container{
+    padding: 16px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-container .head{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 8px;
+    }
+
+
+   .desc{
+    width: 700px;
+   }
+
+   .intro-2{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.345);
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 4px;
+    font-weight: bold;
+   }
+
+   .dark-description-container{
+    background-color:  #313534;
+    color: white;
+   padding: 16px 0px 20px 0px;
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .dark-description-container .head{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 8px;
+   }
+   
+
+@media  (max-width:734px) {
+    .description-container,
+    .dark-description-container{
+       height: 200px ; 
+    }
+    
+    .desc{
+        width: 400px;
+       }
+}
+
+@media  (max-width:559px){
+    .background-img1,
+    .background-img1,
+    .background-img3,
+    .background-img4{
+        background-position: center;
+    }
+}
+
+@media  (max-width:499px){
+    .description-container,
+    .dark-description-container{
+       padding: 8px ; 
+    }
+}
